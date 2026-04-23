@@ -1,6 +1,6 @@
 Gerador de senhas com interface moderna e foco em usabilidade. Permite criar senhas seguras com diferentes critérios e acompanhar a força em tempo real.
 
-✨ Funcionalidades
+Funcionalidades
 Geração de senhas com tamanho ajustável
 Opções de caracteres (maiúsculas, minúsculas, números e símbolos)
 Indicador de força da senha
