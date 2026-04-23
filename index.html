@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Senhas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Container principal -->
+  <div class="container">
+    <!-- Cabeçalho -->
+    <header>
+      <h1>Gerador de Senhas</h1>
+      <p>Crie senhas seguras e fáceis de usar</p>
+    </header>
+
+    <!-- Seção principal -->
+    <main>
+      <!-- Card da senha -->
+      <section class="password-card">
+        <h2>Sua Senha</h2>
+        
+        <!-- Display da senha -->
+        <div class="password-display">
+          <span id="passwordText">??????????????</span>
+          <button id="copyBtn" title="Copiar senha">
+            <span id="copyText">Copiar</span>
+          </button>
+        </div>
+        
+        <!-- Indicador de força -->
+        <div class="strength-indicator">
+          <div class="strength-header">
+            <span>Força:</span>
+            <span id="strengthLevel">Média</span>
+          </div>
+          <div class="strength-bar">
+            <div id="strengthBar"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card de configurações -->
+      <section class="settings-card">
+        <h2>Configurações</h2>
+        
+        <!-- Opções de caracteres -->
+        <div class="options">
+          <label class="option">
+            <input type="checkbox" id="uppercaseCheck" checked>
+            <span>Letras Maiúsculas</span>
+          </label>
+          <label class="option">
+            <input type="checkbox" id="lowercaseCheck" checked>
+            <span>Letras Minúsculas</span>
+          </label>
+          <label class="option">
+            <input type="checkbox" id="numbersCheck" checked>
+            <span>Números</span>
+          </label>
+          <label class="option">
+            <input type="checkbox" id="symbolsCheck" checked>
+            <span>Símbolos</span>
+          </label>
+        </div>
+        
+        <!-- Botões -->
+        <div class="buttons">
+          <button id="generateBtn" class="btn-primary">Gerar Nova Senha</button>
+          <button id="clearHistoryBtn" class="btn-secondary">Limpar Histórico</button>
+        </div>
+      </section>
+
+      <!-- Histórico -->
+      <section class="history-card">
+        <h2>Histórico</h2>
+        <div id="historyList">
+          <p class="empty-history">Nenhuma senha gerada ainda</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Notificações -->
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
